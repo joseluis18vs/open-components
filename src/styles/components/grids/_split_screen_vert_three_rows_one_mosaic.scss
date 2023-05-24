@@ -1,28 +1,29 @@
-.sstmtr--grid-container {
+.sstrom--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 
-    .sstmtr--left-column {
+    .sstrom--left-column {
         background-color: #aeaeae;
         display: flex;
         flex-direction: column;
         height: 100%;
+        order: 2;
 
-        .sstmtr--left-content {
-            background-color: #fef1ff;
-            height: 100%;
+        .sstrom--left-content {
+            background-color: #fdfffb;
+            flex-grow: 1;
         }
     }
 
-    .sstmtr--right-column {
-        display: flex;
-        flex-direction: column;
+    .sstrom--right-column {
+        background-color: #d2ffbd;
         height: 100%;
+        order: 1;
 
-        .sstmtr--right-content {
+        .sstrom--right-content {
             background-color: #effcff;
             height: 100%;
         }
@@ -38,8 +39,14 @@
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .sstmtr--grid-container {
+    .sstrom--grid-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+
+        .sstrom--left-column {
+            order: 1;
+        }
+        .sstrom--right-column {
+            order: 2;
+        }
     }
 }

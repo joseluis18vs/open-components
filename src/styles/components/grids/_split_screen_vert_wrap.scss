@@ -1,14 +1,16 @@
-.ssw--grid-container {
+.ssvw--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
+    grid-template-rows: auto auto;
+    height: 100%;
+    width: 100%;
 
-    .ssw--left-column {
+    .ssvw--left-column {
         background-color: #ccc;
     }
 
-    .ssw--right-column {
+    .ssvw--right-column {
         background-color: #eee;
         display: none;
     }
@@ -16,14 +18,13 @@
 
 /* Movile */
 @media only screen and (max-width: 480px) {
-    .ssw--grid-container {
-        grid-template-rows: 60% 40%;
+    .ssvw--grid-container {
 
-        .ssw--left-column {
+        .ssvw--left-column {
             grid-row: 1;
         }
 
-        .ssw--right-column {
+        .ssvw--right-column {
             grid-row: 2;
         }
     }
@@ -31,14 +32,13 @@
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 912px) {
-    .ssw--grid-container {
-            grid-template-rows: 60% 40%;
+    .ssvw--grid-container {
     
-            .ssw--left-column {
+            .ssvw--left-column {
                 grid-row: 1;
             }
     
-            .ssw--right-column {
+            .ssvw--right-column {
                 grid-row: 2;
             }
         }
@@ -46,10 +46,11 @@
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .ssw--grid-container {
+    .ssvw--grid-container {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
 
-        .ssw--right-column {
+        .ssvw--right-column {
             display: block;
         }
     }

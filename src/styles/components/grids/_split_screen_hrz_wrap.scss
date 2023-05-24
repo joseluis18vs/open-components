@@ -1,13 +1,17 @@
-.tcp--grid-container {
+.sshw--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     height: 100%;
     width: 100%;
 
-    .tcp--grid-item {
-        border: 1px solid #969696;
+    .sshw--left-column {
+        background-color: #ccc;
+    }
+
+    .sshw--right-column {
+        background-color: #eee;
     }
 }
 
@@ -18,9 +22,4 @@
 @media only screen and (min-width: 481px) and (max-width: 912px) {}
 
 /* Desktop */
-@media only screen and (min-width: 913px) {
-    .tcp--grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    }
-}
+@media only screen and (min-width: 913px) {}

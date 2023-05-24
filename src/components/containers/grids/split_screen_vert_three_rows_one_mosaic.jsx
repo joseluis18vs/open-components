@@ -1,6 +1,6 @@
-import '../../../styles/components/grids/_split_screen_three_rows_one_mosaic.scss'
+import '../../../styles/components/grids/_split_screen_vert_three_rows_one_mosaic.scss'
 
-const SplitScreenThreeRowsOneMosaic = () => {
+const SplitScreenVertThreeRowsOneMosaic = () => {
     return (
         <div className="sstrom--grid-container">
             <div className="sstrom--left-column">
@@ -15,4 +15,4 @@ const SplitScreenThreeRowsOneMosaic = () => {
     );
 };
 
-export default SplitScreenThreeRowsOneMosaic;
+export default SplitScreenVertThreeRowsOneMosaic;

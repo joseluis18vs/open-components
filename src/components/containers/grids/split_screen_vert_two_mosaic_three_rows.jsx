@@ -1,12 +1,11 @@
-import "../../../styles/components/grids/_split_screen_two_mosaic_three_rows.scss"
+import "../../../styles/components/grids/_split_screen_vert_two_mosaic_three_rows.scss"
 
-
-const SplitScreenTwoMosaicThreeRows = () => {
+const SplitScreenVertTwoMosaicThreeRows = () => {
     return (
         <div className="sstmtr--grid-container">
             <div className="sstmtr--left-column">
-                <div className="sstmtr--left-content">Contenido izquierdo</div>
-                <div className="sstmtr--left-content">Contenido izquierdo</div>
+                <div className="sstmtr--left-content">Contenido izquierdo 1</div>
+                <div className="sstmtr--left-content">Contenido izquierdo 2</div>
             </div>
             <div className="sstmtr--right-column">
                 <div className="sstmtr--right-content">Contenido derecho 1</div>
@@ -17,4 +16,4 @@ const SplitScreenTwoMosaicThreeRows = () => {
     );
 };
 
-export default SplitScreenTwoMosaicThreeRows;
+export default SplitScreenVertTwoMosaicThreeRows;

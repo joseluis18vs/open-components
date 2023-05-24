@@ -1,13 +1,17 @@
-.tcp--grid-container {
+.sshh--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
 
-    .tcp--grid-item {
-        border: 1px solid #969696;
+    .sshh--left-column {
+        background-color: #ccc;
+    }
+
+    .sshh--right-column {
+        background-color: #eee;
+        display: none;
     }
 }
 
@@ -19,8 +23,11 @@
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .tcp--grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+    .sshh--grid-container {
+        grid-template-rows: 1fr 1fr;
+
+        .sshh--right-column {
+            display: block;
+        }
     }
 }

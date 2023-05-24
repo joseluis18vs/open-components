@@ -1,28 +1,29 @@
-.sstrtm--grid-container {
+.sstmtr--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 
-    .sstrtm--left-column {
+    .sstmtr--left-column {
         background-color: #aeaeae;
         display: flex;
         flex-direction: column;
         height: 100%;
 
-        .sstrtm--left-content {
+        .sstmtr--left-content {
             background-color: #fef1ff;
             height: 100%;
         }
     }
 
-    .sstrtm--right-column {
+    .sstmtr--right-column {
         display: flex;
         flex-direction: column;
         height: 100%;
 
-        .sstrtm--right-content {
+        .sstmtr--right-content {
             background-color: #effcff;
             height: 100%;
         }
@@ -38,16 +39,8 @@
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .sstrtm--grid-container {
+    .sstmtr--grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
-
-        .sstrtm--left-column {
-            order: 2;
-        }
-
-        .sstrtm--right-column {
-            order: 1;
-        }
 }

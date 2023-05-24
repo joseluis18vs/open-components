@@ -1,28 +1,29 @@
-.sstrom--grid-container {
+.ssvtrtm--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
 
-    .sstrom--left-column {
+    .ssvtrtm--left-column {
         background-color: #aeaeae;
         display: flex;
         flex-direction: column;
         height: 100%;
-        order: 2;
 
-        .sstrom--left-content {
-            background-color: #fdfffb;
-            flex-grow: 1;
+        .ssvtrtm--left-content {
+            background-color: #fef1ff;
+            height: 100%;
         }
     }
 
-    .sstrom--right-column {
-        background-color: #d2ffbd;
+    .ssvtrtm--right-column {
+        display: flex;
+        flex-direction: column;
         height: 100%;
-        order: 1;
 
-        .sstrom--right-content {
+        .ssvtrtm--right-content {
             background-color: #effcff;
             height: 100%;
         }
@@ -38,14 +39,16 @@
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .sstrom--grid-container {
+    .ssvtrtm--grid-container {
         grid-template-columns: 1fr 1fr;
-
-        .sstrom--left-column {
-            order: 1;
-        }
-        .sstrom--right-column {
-            order: 2;
-        }
+        grid-template-rows: auto;
     }
+
+/*     .ssvtrtm--left-column {
+        order: 2;
+    }
+
+    .ssvtrtm--right-column {
+        order: 1;
+    } */
 }

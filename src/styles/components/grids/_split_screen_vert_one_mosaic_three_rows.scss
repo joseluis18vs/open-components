@@ -1,22 +1,25 @@
-
-.ssomt--grid-container {
+.ssvomtr--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 
-    .ssomt--left-colum {
-        background-color: #d2ffbd;
+    .ssvomtr--left-colum {
+        
+        .ssvomtr--left-content{
+            background-color: #f0ffeb;
+            height: 100%;
+        }
     }
 
-    .ssomt--right-column {
-        background-color: #aeaeae;
+    .ssvomtr--right-column {
         display: flex;
         flex-direction: column;
         height: 100%;
 
-        .ssomt--right-content {
-            background-color: #eee;
+        .ssvomtr--right-content {
+            background-color: #f9f1ff;
             flex-grow: 1;
         }
     }
@@ -30,7 +33,7 @@
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .ssomt--grid-container {
+    .ssvomtr--grid-container {
         grid-template-columns: 1fr 1fr;
     }
 }
