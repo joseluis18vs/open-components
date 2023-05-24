@@ -1,0 +1,36 @@
+.ssh--grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+
+    .ssh--left-column {
+        background-color: #ccc;
+    }
+
+    .ssh--right-column {
+        background-color: #eee;
+        display: none;
+    }
+}
+
+/* Movile */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 913px) {
+    .ssh--grid-container {
+        grid-template-columns: 1fr 1fr;
+
+        .ssh--right-column {
+            display: block;
+        }
+    }
+}

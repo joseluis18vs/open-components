@@ -1,0 +1,36 @@
+
+.ssomt--grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+
+    .ssomt--left-colum {
+        background-color: #d2ffbd;
+    }
+
+    .ssomt--right-column {
+        background-color: #aeaeae;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .ssomt--right-content {
+            background-color: #eee;
+            flex-grow: 1;
+        }
+    }
+}
+
+/* Movile */
+@media only screen and (max-width: 480px) {}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {}
+
+/* Desktop */
+@media only screen and (min-width: 913px) {
+    .ssomt--grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

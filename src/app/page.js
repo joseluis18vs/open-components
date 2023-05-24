@@ -1,18 +1,10 @@
-import Carousel from "../components/containers/carousel";
+import SplitScreenHide from "../components/containers/grids/split_screen_hide";
 
 export default function Page()
 {
-    const services = [
-        {
-            service: "",
-            description: "",
-            category: ""
-        }
-    ]
-
     return(
-        <>
-            <Carousel />
-        </>
+        <div className="main">
+            <SplitScreenHide />
+        </div>
     )
 }

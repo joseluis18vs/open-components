@@ -1,0 +1,28 @@
+.mfe--grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    height: 100vh;
+
+    .mfe--mosaic-element{
+        border: 1px solid #807f7f;
+    }
+
+}
+
+/* Movile */
+@media only screen and (max-width: 480px) {}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {
+    
+}
+
+/* Desktop */
+@media only screen and (min-width: 913px) {
+    .mfe--grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:auto;
+    }
+}
