@@ -1,22 +1,29 @@
-import MosaicFourElements from "../components/containers/grids/mosaic_four_elements";
-import MosaicSixElements from "../components/containers/grids/mosaic_six_elements";
-import MosaicThreeCol from "../components/containers/grids/mosaic_three_col";
-import MosaicThreeRows from "../components/containers/grids/mosaic_three_rows";
-import SplitScreenHrzHide from "../components/containers/grids/split_screen_hrz_hide";
-import SplitScreenHrzWrap from "../components/containers/grids/split_screen_hrz_wrap";
-import SplitScreenVertHide from "../components/containers/grids/split_screen_vert_hide";
-import SplitScreenVertOneMosaicThreeRows from "../components/containers/grids/split_screen_vert_one_mosaic_three_rows";
-import SplitScreenVertThreeRowsOneMosaic from "../components/containers/grids/split_screen_vert_three_rows_one_mosaic";
-import SplitScreenVertThreeRowsThreeMosaic from "../components/containers/grids/split_screen_vert_three_rows_three_mosaic";
-import SplitScreenVertThreeRowsTwoMosaic from "../components/containers/grids/split_screen_vert_three_rows_two_mosaic";
-import SplitScreenVertTwoMosaicThreeRows from "../components/containers/grids/split_screen_vert_two_mosaic_three_rows";
-import SplitScreenVertWrap from "../components/containers/grids/split_screen_vert_wrap";
+import SplitScreenHrzH1x1 from "../components/containers/grids/split_screen_horizontal/ssh_1x1_h";
+import SplitScreenHrz1x1 from "../components/containers/grids/split_screen_horizontal/ssh_1x1_w";
+import SplitScreenHrz1x2 from "../components/containers/grids/split_screen_horizontal/ssh_1x2_w";
+import SplitScreenVert1x1 from "../components/containers/grids/split_screen_vertical/ssv_1x1_w";
+import SplitScreenVert1x1Hide from "../components/containers/grids/split_screen_vertical/ssv_1x1_wh";
+import SplitScreenVert1x2 from "../components/containers/grids/split_screen_vertical/ssv_1x2_w";
+import SplitScreenVert1x3 from "../components/containers/grids/split_screen_vertical/ssv_1x3_w";
+import SplitScreenVert1x4 from "../components/containers/grids/split_screen_vertical/ssv_1x4_w";
+import SplitScreenVert2x1 from "../components/containers/grids/split_screen_vertical/ssv_2x1_w";
+import SplitScreenVert2x2 from "../components/containers/grids/split_screen_vertical/ssv_2x2_w";
+import SplitScreenVert2x3 from "../components/containers/grids/split_screen_vertical/ssv_2x3_w";
+import SplitScreenVert2x4 from "../components/containers/grids/split_screen_vertical/ssv_2x4_w";
+import SplitScreenVert3x1 from "../components/containers/grids/split_screen_vertical/ssv_3x1_w";
+import SplitScreenVert3x2 from "../components/containers/grids/split_screen_vertical/ssv_3x2_w";
+import SplitScreenVert3x3 from "../components/containers/grids/split_screen_vertical/ssv_3x3_w";
+import SplitScreenVert3x4 from "../components/containers/grids/split_screen_vertical/ssv_3x4_w";
+import SplitScreenVert4x1 from "../components/containers/grids/split_screen_vertical/ssv_4x1_w";
+import SplitScreenVert4x2 from "../components/containers/grids/split_screen_vertical/ssv_4x2_w";
+import SplitScreenVert4x3 from "../components/containers/grids/split_screen_vertical/ssv_4x3_w";
+import SplitScreenVert4x4 from "../components/containers/grids/split_screen_vertical/ssv_4x4_w";
 
 export default function Page()
 {
     return(
         <div className="main">
-            <SplitScreenVertWrap />
+            <SplitScreenHrz1x2 />
         </div>
     )
 }

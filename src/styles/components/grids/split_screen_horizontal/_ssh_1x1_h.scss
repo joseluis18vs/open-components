@@ -1,0 +1,33 @@
+.ssh1x1h--grid-container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+
+    .ssh1x1h--top-row {
+        background-color: #ccc;
+    }
+
+    .ssh1x1h--low-row {
+        background-color: #eee;
+        
+    }
+}
+
+/* Movile */
+@media only screen and (max-width: 480px) {
+    .ssh1x1h--grid-container {
+        grid-template-rows: 1fr;
+
+        .ssh1x1h--low-row {
+            display: none;
+        }
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {}
+
+/* Desktop */
+@media only screen and (min-width: 913px) {}

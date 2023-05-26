@@ -1,4 +1,4 @@
-.ssvw--grid-container {
+.ssv1x1w--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
@@ -6,11 +6,11 @@
     height: 100%;
     width: 100%;
 
-    .ssvw--left-column {
+    .ssv1x1w--left-column {
         background-color: #ccc;
     }
 
-    .ssvw--right-column {
+    .ssv1x1w--right-column {
         background-color: #eee;
         display: none;
     }
@@ -18,13 +18,13 @@
 
 /* Movile */
 @media only screen and (max-width: 480px) {
-    .ssvw--grid-container {
+    .ssv1x1w--grid-container {
 
-        .ssvw--left-column {
+        .ssv1x1w--left-column {
             grid-row: 1;
         }
 
-        .ssvw--right-column {
+        .ssv1x1w--right-column {
             grid-row: 2;
         }
     }
@@ -32,25 +32,25 @@
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 912px) {
-    .ssvw--grid-container {
-    
-            .ssvw--left-column {
-                grid-row: 1;
-            }
-    
-            .ssvw--right-column {
-                grid-row: 2;
-            }
+    .ssv1x1w--grid-container {
+
+        .ssv1x1w--left-column {
+            grid-row: 1;
         }
+
+        .ssv1x1w--right-column {
+            grid-row: 2;
+        }
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .ssvw--grid-container {
+    .ssv1x1w--grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
 
-        .ssvw--right-column {
+        .ssv1x1w--right-column {
             display: block;
         }
     }

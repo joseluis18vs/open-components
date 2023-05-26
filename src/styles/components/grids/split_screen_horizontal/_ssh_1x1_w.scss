@@ -1,0 +1,25 @@
+.ssh1x1w--grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: 100%;
+    width: 100%;
+
+    .ssh1x1w--top-row {
+        background-color: #ccc;
+    }
+
+    .ssh1x1w--low-row {
+        background-color: #eee;
+    }
+}
+
+/* Movile */
+@media only screen and (max-width: 480px) {}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {}
+
+/* Desktop */
+@media only screen and (min-width: 913px) {}

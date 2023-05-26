@@ -1,36 +1,32 @@
-.ssvh--grid-container {
+.ssv1x1h--grid-container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     height: 100%;
     width: 100%;
 
-    .ssvh--left-column {
+    .ssv1x1h--left-column {
         background-color: #ccc;
     }
 
-    .ssvh--right-column {
+    .ssv1x1h--right-column {
         background-color: #eee;
         display: none;
     }
 }
 
 /* Movile */
-@media only screen and (max-width: 480px) {
-
-}
+@media only screen and (max-width: 480px) {}
 
 /* Tablets */
-@media only screen and (min-width: 481px) and (max-width: 912px) {
-
-}
+@media only screen and (min-width: 481px) and (max-width: 912px) {}
 
 /* Desktop */
 @media only screen and (min-width: 913px) {
-    .ssvh--grid-container {
+    .ssv1x1h--grid-container {
         grid-template-columns: 1fr 1fr;
 
-        .ssvh--right-column {
+        .ssv1x1h--right-column {
             display: block;
         }
     }
