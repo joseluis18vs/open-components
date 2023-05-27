@@ -1,4 +1,4 @@
-.ssh1x2h--grid-container {
+.ssh1x3h--grid-container {
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
@@ -6,16 +6,16 @@
     height: 100%;
     width: 100%;
 
-    .ssh1x2h--top-row {
+    .ssh1x3h--top-row {
         background-color: #ccc;
     }
 
-    .ssh1x2h--low-row {
+    .ssh1x3h--low-row {
         background-color: #eee;
         display: flex;
         flex-direction: row;
         
-        .ssh1x2h--low-content{
+        .ssh1x3h--low-content{
             border: 1px solid lightgreen;
             flex-grow: 1;
         }
@@ -26,12 +26,12 @@
 /* Movile */
 @media only screen and (max-width: 480px) {
     
-    .ssh1x2h--grid-container {
+    .ssh1x3h--grid-container {
 
-        .ssh1x2h--low-row {
+        .ssh1x3h--low-row {
             flex-direction: column;
 
-            .ssh1x2h--low-content {
+            .ssh1x3h--low-content {
                 height: 100%;
             }
         }
