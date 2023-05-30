@@ -1,3 +1,4 @@
+import "../../../styles/components/functionals/_carousel.scss"
 import Image from "next/image";
 import Link from "next/link";
 

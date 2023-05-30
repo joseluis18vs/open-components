@@ -61,7 +61,6 @@
 
     .slider--prev, .slider--next {
         position: absolute;
-        bottom: 12px;
         display: flex;
         width: 50px;
         height: 50px;
@@ -79,10 +78,31 @@
     }
 
     .slider--next{
-        right: 50px;
+        right: 25%;
     }
 
     .slider--prev {
-        left: 50px;
+        left: 25%;
     }
 }
+
+/* Movile */
+@media only screen and (max-width: 480px) {
+    
+    .carosel {
+        
+        .slider--next {
+            right: 0;
+        }
+
+        .slider--prev {
+            left: 0;
+        }
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {}
+
+/* Desktop */
+@media only screen and (min-width: 913px) {}

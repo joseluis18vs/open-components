@@ -1,3 +1,5 @@
+import Carousel from "../components/containers/functionals/carousel";
+import Slider from "../components/containers/functionals/slider";
 import SplitScreenHrzH1x1 from "../components/containers/grids/split_screen_horizontal/ssh_1x1_h";
 import SplitScreenHrz1x1 from "../components/containers/grids/split_screen_horizontal/ssh_1x1_w";
 import SplitScreenHrz1x2 from "../components/containers/grids/split_screen_horizontal/ssh_1x2_w";
@@ -33,11 +35,13 @@ import SplitScreenVert4x2 from "../components/containers/grids/split_screen_vert
 import SplitScreenVert4x3 from "../components/containers/grids/split_screen_vertical/ssv_4x3_w";
 import SplitScreenVert4x4 from "../components/containers/grids/split_screen_vertical/ssv_4x4_w";
 
+import "../styles/global/_main.scss"
+
 export default function Page()
 {
     return(
         <div className="main">
-            <SplitScreenHrz4x4 />
+            <Slider />
         </div>
     )
 }
